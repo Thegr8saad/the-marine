@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #ccc;
+    display: block;
+    line-height: 1.6;
+
+}
+.btn{
+    background: black;
+    color: #fff;
+    padding: 0.3rem 1.3rem;
+    
+    
+}
+
+.nav_bar{
+    background-color: midnightblue;
+    
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    display: block;
+    
+    
+
+}
+h1{
+    float:left;
+    text-indent: 2em;
+    font-size: 3rem;
+    color: lightblue;
+}
+
+
+nav ul{
+    float:right;
+    display: flex;
+   
+}
+nav ul li{
+    float:right;
+   
+}
+nav ul li a{
+    padding: 0.5em;
+    border: 1px solid ;
+    border-radius: .5em  ;
+    border-color: white;
+    color: white;
+    margin-left: 2em;
+}
+.search{
+    margin: 2em;
+    margin-top: 1em;
+
+}
+/* top container */
+.top-container{
+    margin-top: 2em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "show-case show-case top-box-a"
+    "show-case show-case top-box-b";
+
+}
+.show-case{
+    grid-area: show-case;
+    min-height: 400px;
+    background-image: url(images/FB_IMG_15880676348037225.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    
+}
+.show-case h2{
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: white;
+}
+.show-case p{
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: white;
+}
+.top-box{
+    background-color: #bbb;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(54, 52, 52, 0.8);
+    padding: 1.5rem;
+}
+.top-box-a{
+    grid-area: top-box-a;
+
+}
+.top-box-a .price{
+    font-size: 2rem;
+}
+.top-box-b{
+    grid-area: top-box-b;
+}
+.top-box-b .price{
+    font-size: 2rem;
+}
+
+.working{
+    margin: 30px 30px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.info{
+    background-color:  #bbb;
+   
+    box-shadow: rgba(54, 52, 52, 0.8);
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem;
+    
+
+}
+.info h4{
+    background-image: url(images/frontship.JPG);
+    background-position: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info h2{
+    font-size: 2rem;
+}
+.info h2{
+    font-size: 2rem;
+}
+.info p{
+    font-size: 1.3rem;
+}
+/* footer */
+footer{
+    display: grid;
+    background-color: black;
+    box-shadow: rgba(54, 52, 52, 0.8);
+    padding: 1rem;
+    grid-gap: 20px;
+    color: white;
+}
+footer p{
+    text-align: center;
+}
+/* media queries */
+@media(max-width: 700px){
+    nav ul{
+        background-color: midnightblue;
+        width: 100%;
+    }
+     
+   .top-container{
+       grid-template-areas: 
+       "show-case show-case"
+       "top-box-a top-box-b";
+       width: 100%;
+       margin-top: 5rem;
+       
+   }
+   .show-case{
+       padding: 2rem;
+       align-items: start;
+       justify-content: center;
+       min-height: 100px;
+       
+   }
+   .top-box{
+       padding: 0.5rem;
+   }
+    .show-case h2{
+        font-size: 2.5rem;
+
+    }
+    .image{
+        height: 100;
+        width: 100;
+    }
+    .info{
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .info h2{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .info h4{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 230%;
+    }
+    .info p{
+        font-size: 1rem;
+        
+    }
+       
+        
+    footer{
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
